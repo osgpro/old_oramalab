@@ -1,0 +1,129 @@
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+    left: 16% !important;
+    top: 85% !important;
+}
+
+.swiper-pagination span {
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    width: 70px;
+    height: 4px;
+    background-color: #3d92c1;
+    margin: 0.8rem 0 !important;
+}
+.swiper-pagination span:hover {
+    width: 150px;
+    border-radius: 30px;
+}
+
+.swiper-pagination span:focus {
+    width: 150px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 150px !important; 
+}
+
+.hero-bg-container {
+    -webkit-background-image: url(./Assets/images/hero-bg-01.jpg);
+    -o-background-image: url(./Assets/images/hero-bg-01.jpg);
+    -moz-background-image: url(./Assets/images/hero-bg-01.jpg);
+    background-image: url(./Assets/images/hero-bg-01.jpg);
+
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+    -webkit-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    
+    -webkit-background-position: center;
+    -o-background-position: center;
+    -moz-background-position: center;
+    background-position: center;
+}
+
+.progress-bar {
+    background-color: transparent !important;
+}
+
+@media ( max-width: 1024px ) {
+    .swiper.swiper-initialized.swiper-vertical svg {
+        display: none;
+    }
+}
+
+.about-us .container {
+    background-image: url("./Assets/images/272738-P5XKUP-241-01.png");
+    background-size: 40%;
+    background-position: 60%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px ) {
+    .about-us .container {
+        background-position: bottom right;
+        background-size: 60%;
+    }
+}
+
+.whyOrama {
+    background-image: url("./Assets/images/whyOrama-bg.png");
+    background-size: cover;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: #f69e44;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: #f69e44;
+}
+
+.whyOrama .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.mySwiper.swiper-backface-hidden {
+    height: 600px;
+}
+
+/* .our-work-slide .mySwiper .our-work-swiper {
+} */
+
+.our-work-swiper div div {
+    background-image: url('./Assets/images/272738-P5XKUP-241-01.png');
+    background-size: 20%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.how-we-work {
+    background-image: url("./Assets/images/how-we-work-bg-01.png");
+    background-size: cover;
+}

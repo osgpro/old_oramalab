@@ -1,0 +1,86 @@
+@use "./variables"
+
+.navbar 
+    background-color: variables.$dark_blue !important
+    padding-top: 0rem !important
+    padding-bottom: 0rem !important
+    position: relative
+    & > img 
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+    .container
+        position: relative
+        z-index: 10 
+        a
+            color: white
+        .navbar-collapse
+            .navbar-nav
+                a 
+                    color: white
+                    padding: 0
+                    margin: 0rem 1rem
+                    transition: all 0.5s ease-in-out !important
+                    position: relative
+                    @media (max-width: 1199px)
+                        font-size: 13px
+                        margin: 0rem 0.5rem
+                        text-align: center
+                    @media (max-width: 991px)
+                        font-size: 15px
+                        padding: 0.5rem
+                    @media (min-width: 992px)
+                        &::before
+                            content: ""
+                            position: absolute
+                            bottom: -10px 
+                            left: 0
+                            background-color: variables.$orange
+                            height: 3px
+                            width: 0%
+                            border-radius: 15px
+                            transition: all 0.2s ease-in-out !important
+                        &:hover
+                            color: variables.$orange
+                            &::before
+                                width: 100%
+                .dropdown-menu.show
+                    border-top: 6px solid variables.$orange
+                    .dropdown-menu
+                        margin: 0rem 0rem 0.5rem 0rem !important
+                        color: variables.$orange
+                        padding: 0.5rem
+        form
+            display: flex
+            align-items: center
+            @media ( max-width: 991px )
+                justify-content: center
+                margin-top: 1rem
+                align-items: flex-start
+            .phone-num
+                margin-right: 0.5rem
+                p
+                    color: white
+                    text-align: right
+                    line-height: 10px
+                    &:first-of-type
+                        font-size: 12px
+                    @media ( max-width: 991px ) 
+                        font-size: 12px
+            .call-us
+                background-color: variables.$sky-blue
+                padding: 1.5rem 0
+                width: 100px
+                text-align: center
+                @media ( max-width: 991px )
+                    padding: 0.5rem 0
+                i
+                    color: white
+                    font-size: 1.5rem
+                    transform: rotate(-30deg)
+
+.navbar-toggler
+    background-color: white !important
+
+.navbar-toggler.collapsed
